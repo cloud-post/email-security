@@ -1,0 +1,67 @@
+<!DOCTYPE html">
+<html>
+<head>
+<title>What Is A DMARC Record? And Know  How To Fix the "No DMARC Record Found" Error</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<style type="text/css" media="all">
+@import "images/style.css";
+</style>
+</head>
+<body>
+<div id="page-container">
+  <div id="top"> 
+    
+  </div>
+  <div id="sidebar-Q2a">
+    <div class="padSding">
+    
+        
+      </ul>
+    </div>
+   
+    
+  </div>
+  <div id="content">
+    <div class="padding">
+      <h2><center>What Is A DMARC Record? <br>And Know  How To Fix the "No DMARC Record Found" Error</center></h2><br>
+      <p>If you're like most people, you probably use email every day. Whether you're sending a personal message or communicating with colleagues, email is a convenient way to stay in touch. But did you know that your email messages are vulnerable to spoofing? Spoofing is a type of email fraud that occurs when someone sending an email makes it appear as though the email is coming from a different source. This type of fraud can be used to trick people into disclosing sensitive information or to spread malware. One way to protect yourself from email spoofing is to use DMARC. DMARC is an email authentication standard that helps to prevent email spoofing by verifying the sender of an email message. If you're not using DMARC, you should be.&nbsp;</p>
+<p>If you're like most people, you probably don't know what a DMARC record is. And that's OK! But if you want to make sure your emails are getting delivered to your contacts' inboxes, it's important to understand <a href="https://dmarcreport.com/create-dmarc-record/">how to fix a "No DMARC Record Found" error</a>.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="dmarc-05.jpg" alt="dmarc" /></p>
+<h2>What is DMARC</h2>
+<p>DMARC stands for "Domain-based Message Authentication, Reporting &amp; Conformance." It's an <strong>email authentication protocol</strong> with reporting and policy enforcement capabilities. DMARC is built on SPF and DKIM.</p>
+<p><em>DMARC checks the results returned by SPF and DKIM, and decides if an email is an OK or failing authentication based on the DMARC policy that is configured on the email server.</em> Based on DMARC's requirements, DMARC will take certain actions to stop malicious spoofing attempts.</p>
+<h2>What is a DMARC record?</h2>
+<p>A DMARC record is a text-based record in DNS distributed over the domain of the domain owner or administrator, which details the policy for receiving emails. When the receiving email server checks that incoming email against DMARC, it will access a DMARC record on the domain extracted from the sender's email address.</p>
+<p>A DMARC record specifies the DMARC policy that is enacted when an email fails <strong>DMARC authentication</strong> using the p tag, such as none (no action), quarantine (move to spam), or reject (reject the email outright).</p>
+<p>It should additionally specify a record of DMARC aggregate email subjects, using the <strong>rua tag</strong>. This way, these subjects will have the ability to view these aggregate reports to spot potential issues in the mail infrastructure and correct them if necessary.</p>
+<h2>How to fix "No DMARC Record Found"</h2>
+<p>Here are the 3 steps to fix "No DMARC Record Found".</p>
+<ol>
+
+<h3>1. &nbsp;Generate DMARC record</h3>
+</li>
+</ol>
+<p>We can use a complimentary <a href="https://mxtoolbox.com/DMARCRecordGenerator.aspx#:~:text=ABOUT%20DMARC%20RECORD%20GENERATOR,to%20build%20the%20DMARC%20record.">DMARC record generator to generate</a> a DMARC record.</p>
+<p>2 things to bear in mind here. First, if you are implementing DMARC for the first time, it is most definitely worth setting the policy to none (p none), which puts DMARC in <strong>monitoring mode</strong>. This does not affect your email streams in any way while allowing you to receive DMARC reports providing insight about your email authentication status.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="dmarc-06.jpg" alt="dmarc" /></p>
+<p>You can request the DMARC service to send you email reports by specifying the rua tag to that mailbox. If the dashboard generates such a DMARC record, it will put the tag in the email address for you, too. Thus, you won't need to place and maintain the mailbox in question.</p>
+<ol>
+
+<h3> 2. Publish the DMARC record</h3>
+</li>
+</ol>
+<p>The DMARC DNS command generates a post in the DNS that receives email servers. Immediately after the record is generated, you should log into the <a href="https://en.wikipedia.org/wiki/Domain_Name_System">Domain Name System</a> of the DNS provider's dashboard to add the record.</p>
+<ol>
+
+<h3>3. &nbsp;Verify the DMARC record</h3>
+</li>
+</ol>
+<p>You can use a free online <a href="https://dnschecker.org/dmarc-record-validation.php">DMARC checker</a> to ensure accessibility after the record is published.</p>
+<p>In summary, DMARC records aren't a silver bullet, but they help. DMARC provides a "gold standard" for DMARC records. It reduces the number of emails that <strong>end up in spam.</strong> DMARC records can tell the receiving email server what to do with an email. DMARC records inform servers of email senders and how to handle emails that contain content sourced from or derived from compromised systems. It also does exist to warn servers regarding phishing attempts involving email spoofing. Finally, DMARC records provide information on what SPF records to use to block known malware and phishing attempts.</p>
+      
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>
