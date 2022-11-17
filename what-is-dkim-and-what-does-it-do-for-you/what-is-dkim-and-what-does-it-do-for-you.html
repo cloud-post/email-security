@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>What Is DKIM And What Does It Do For You</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="title" content="Green Zone 2.0 | Template by MLP Design" />
+<meta name="author" content="MLP Design, webmasterneo" />
+<link rel="stylesheet" href="new.css" type="text/css" />
+</head>
+<body>
+<div id="pseudo-wrap1">	<!--Begin Header -->
+	<div id="header">
+		<h1>What Is DKIM And What Does It Do For You?</h1>
+	</div>
+	<!--End Header --></div>
+<div id="pseudo-wrap2">
+<!-- Begin Wrapper -->
+
+<div id="wrap">
+
+<br>
+	
+		
+		
+		<p>DomainKeys Identified Mail (DKIM) is an anti-spam protocol which helps protect emails that may have occurred when eluded detours. DKIM uses digital signatures to determine whether the email was sent by the genuine domain. A DKIM email validation process involves two actions. The first occurs while the sending server sends a DKIM-signed message. The second is completed by the recipient of the message when verifying the DKIM signature.</p>
+<p>The entire process is made possible by a pair of public and private keys. The private key must be kept confidential and is saved either on the sender's own computer or server or with their ESP. The public key, in turn, is added to the DNS records of the sender's domain name and broadcast on the Internet to confirm all emails.</p>
+<p>When the receiving server determines that an email has a valid DKIM signature, it generally indicates that the integrity of the email has been preserved. <a href="https://www.duocircle.com/resources/what-is-dkim">DKIM signatures </a>are not usually visible to the recipients and validation occurs at the receiving server level.</p>
+<h2>How Does DKIM Work?</h2>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="dkim-06.jpg" alt="dkim" /></p>
+<p>A signature is added to an e-mail message header after signing a record in DNS. An electronic signature verifies the email by matching the sender's certificate against one of the public keys listed in the Domain Name System (DNS) records for the domain s DNS manager (registrant or DNS provider).</p>
+<p>Every outgoing email has its own signature, which is created using the domain's private key. This private key is used by the sender's<strong> email server </strong>to verify the origin of the email. When an email receives an inbound mail server, it cross-references DNS to discover the sender's public DKIM key. This key is used by the server to determine whether or not the signature on the email is valid and genuine. When the two values are in agreement, the email is deemed legitimate.</p>
+<h2>What is a DKIM Signature?</h2>
+<p>An <strong>email signature</strong> is a DKIM header that is added to emails. This header allows recipients' mail servers to validate emails by looking up the sender's public key and verifying the signature with the encrypted key.</p>
+<h2>How is DKIM Related to SPF and DMARC?</h2>
+<p>SPF allows email senders to specify which IP addresses can send email messages using their domain name. DKIM provides an encryption key as well as a digital signature that ensures that an email message is trusted. DMARC combines <a href="https://www.sparkpost.com/blog/understanding-spf-and-dkim/">SPF and DKIM</a> authentication procedures, and helps domain owners specify how an email should be handled when it fails authentication.</p>
+<h2>Advantages of DKIM</h2>
+<p>For email receivers, a key advantage of DKIM is that it is key in identifying and blocking fake emails and avoiding the use of domain-based blacklists and whitelists. DKIM also helps to identify and prevent phishing attacks.</p>
+<ul>
+<li aria-level="1"><strong>Spam filtering: </strong>DKIM can help identify mail that isn't known to be spam and doesn't need to be filtered. If a receiving system has a whitelist of reputable sending domains that can be kept locally or obtained from <strong>third-party certifiers</strong>, it can bypass the filtering of signed email from those domains and filter the remainder of the emails more aggressively.</li>
+</ul>
+<ul>
+<li aria-level="1"><strong>Compatibility: </strong>DKIM supports existing email infrastructure because it's implemented using DNS records and an extra RFC 5322 header field. It's particularly obvious to existing email systems that do not support DKIM.</li>
+</ul>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="dkim-07.jpg" alt="dkim" /></p>
+<ul>
+<li aria-level="1"><strong>Anti-phishing: </strong>DKIM can be used to protect against <a href="https://www.proofpoint.com/us/threat-reference/email-spoofing">email spoofing attacks</a>. Senders in heavily spoofed domains may sign their emails to prove their authenticity. The lack of a valid signature from the email can have recipients conclude that the email was cloned.</li>
+</ul>
+<ul>
+<li aria-level="1"><strong>Non-repudiation: </strong><em>DKIM can be used to protect against email spoofing attacks. Senders in heavily spoofed domains may sign their emails to prove their authenticity. </em>The lack of a valid signature from the email can have recipients conclude that the email was cloned.</li>
+</ul>
+<h2>Limitations of DKIM</h2>
+<ul>
+
+<li aria-level="1">The message envelope that contains the return pathway and message recipients is not covered by <a href="https://www.emailonacid.com/blog/article/email-deliverability/what_is_dkim_everything_you_need_to_know_about_digital_signatures/">DKIM signatures</a>.</li>
+</ul>
+</ul>
+<ul>
+<li aria-level="1"><em>DKIM does not sign messages in their entirety, allowing malicious actors to forge this email by adding more header fields.&nbsp;</em></li>
+</ul>
+<ul>
+<li aria-level="1">The information validated by DKIM is only on the server side. End users do not receive substantially from the fact that <strong>message header fields </strong>are protected with DKIM signatures.</li>
+</ul>
+<p>In the end, DKIM is an email authentication system designed to authenticate the identity, integrity and non-forgery of an email message. When enabled on a domain, DKIM allows mail providers to verify that an email message has been sent by that domain's mail servers and was not altered in transit.</p>
+	</div>
+	</div>
+</body>
+</html>
