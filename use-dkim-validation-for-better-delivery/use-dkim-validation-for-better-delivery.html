@@ -1,0 +1,57 @@
+</<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Don't Let Your Emails Get Lost In The Shuffle! Use DKIM Validation For Better Delivery
+	</title>
+<link rel="stylesheet" href="css/template478.css">	
+
+</head>
+<body>
+<div id="container">
+  <div id="content">
+    <div id="about">
+      <h1>
+
+         Don't Let Your Emails Get Lost In The Shuffle! <br>Use DKIM Validation For Better Delivery
+        </div>
+        
+      </h1>
+<p>DKIM stands for DomainKeys Identified Mail. It is an email validation system that works by adding a digital signature to outgoing messages. This signature is then used to verify the message when it is received by the receiving server.&nbsp;</p>
+<p>If the signature is valid, the message is considered to be from the sender and is delivered. If the signature is invalid, the message is considered to be spam and is blocked.</p>
+<p>DKIM can benefit your email deliverability in several ways. First, it can help to ensure that your messages are not considered spam. Second, it can help to ensure that your messages are delivered to the intended recipient.&nbsp;</p>
+<p>Third, it can help to <a href="https://www.avast.com/c-spoofing">prevent spoofing</a> of your email address. Fourth, it can help to protect your email messages from being tampered with in transit. Overall, DKIM can provide significant benefits to your email deliverability. If you are not currently using DKIM, you should consider doing so.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="dkim-validation-07.jpg" alt="dkim-validation" /></p>
+<h2>DKIM Overview</h2>
+<p>Comparable to that of SPF, which presents a process for offering an autonomous domain authorization to send e-mail, DKIM demonstrates a method for setting up an entity to guarantee an email, independent of the actual entity that sent the message.</p>
+<p>When several parties are involved in an email conversation, there is no requirement that all be responsible entities and senders be closely tied together.</p>
+<ul>
+
+<li aria-level="1"><strong>Content-based authentication</strong>, in contrast to the path-based SPF, is accountable for Kerberos.&nbsp;</li>
+<li aria-level="1">The responsible entity signs the message with two distinct <a href="https://www.synopsys.com/blogs/software-security/cryptographic-hash-functions/">cryptographic hashes</a> contained in a message header when it takes responsibility.&nbsp;</li>
+</ul>
+</ul>
+<ul>
+<li aria-level="1"><em>DKIM validation is completed by the sender of the message attempting to generate those two hashes.&nbsp;</em></li>
+</ul>
+<ul>
+<li aria-level="1">DKIM did not find validation most of the time until the whole message was read.</li>
+</ul>
+<h3>&ldquo;Content-Based&rdquo; Authentication</h3>
+<p>DKIM is also referred to as content-based authentication, rather than <strong>path-based</strong>, as whether or not a message (especially one signed with a digital signature) passes DKIM validation can be determined by whether or not the content has changed between when it was signed and the time it was validated.</p>
+<h3>DKIM Signing and Validation</h3>
+<p>Interested organizations will first generate two keys, each for encrypting and decrypting mail according to the DKIM standard. One key is kept secret and is accessible to the <strong>sender server</strong> in establishing the validity of mail, and the other is published for DNS in the receiving domain during the validation process.</p>
+<p><em>The methods of generating these keys and installing them are specific to each online platform, and that's beyond the scope of this guide.</em> However, I will talk about publishing the DNS public DKIM key later.</p>
+<h3>DKIM Validation</h3>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="dkim-validation-08.jpg" alt="dkim-validation" /></p>
+<p>In addition to the requirement mentioned that the domain must match or be under the same domain, d and s bits are used by the validator to check signer's public DKIM key in DNS. The <a href="https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/">TXT record</a> is in the DNS, and it can be found at the location selector. Domainkey.domain.</p>
+<p>The validator uses that key (p bits) to generate its own set of hashes of the message; if these hashes are identical, then the message has not been modified during transport, and so the message can optionally benefit from, or provide against, whatever reputation is at play for the signer of this message.</p>
+<h2>Validation Failure and Troubleshooting</h2>
+<p>Some days of insufficient <a href="https://www.duocircle.com/resources/dkim-validation">DKIM validation</a> have clear reasons, such as because the sending address was not signed, or the signatory key domain's DNS address was not reachable, or the key string was not syntactically correct. When those sorts of failures take place, it's easy to understand where they are originating from and recommend a solution.</p>
+<p>The tough ones, however, and the ones that lead to the most frustrating support experience, are the places where the message was coded, the public key exists in DNS, and the message was not obviously edited, but the validator confirms that the signature did not validate.</p>
+<p>In closing, email is a powerful <strong>marketing tool</strong> that can help you reach your audience in a personal way. In order to ensure that your messages aren't marked as spam or junk, however, you need to take some extra steps. You need to make sure that you are using the right domain name to send your messages, and you need to ensure that this domain name is valid and trustworthy. This can be done through DKIM, which gives you a domain-level reputation that will improve your deliverability.</p>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
