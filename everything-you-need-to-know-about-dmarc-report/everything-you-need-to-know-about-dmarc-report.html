@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Everything You Need To Know About DMARC  Report</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Basic Page Needs
+================================================== -->
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+<!-- Container starts
+================================================== -->
+<div class="container">
+	<!-- Main hero unit for a primary marketing message or call to action -->
+	<div class="hero-unit">
+		<h1>Everything You Need To Know About DMARC  Report</h1>
+		<p>If you manage email for a living, you know how important it is to protect your sender's reputation. One way to do that is by using DMARC. DMARC stands for &ldquo;Domain-based Message Authentication, Reporting, and Conformance&rdquo;. It&rsquo;s a system that helps email senders and receivers verify that email is coming from a legitimate source, and it also provides a way to track and report on email that doesn&rsquo;t pass the DMARC check. In this post, we&rsquo;ll cover everything you <a href="https://www.duocircle.com/content/dmarc-report">need to know about DMARC reports</a>.</p>
+<h2>What is DMARC?</h2>
+<p>DMARC (Domain-based Message Authentication Reporting and Conformance) is a validation system designed to safeguard your company's domain from being used for the purpose of email spoofing, phishing scams, and other cybercrimes. DMARC relies on the existing authentication methods SPF (Sender Policy Framework), and DKIM (Domain Keys Identified Mail). Domain owners can examine their DMARC records in the <strong>DNS protocol</strong> to gain insight into who is sending emails to their domain. This information is collected to get details about the email channel. Equipped with this information, domain owners can get control over emails sent on their behalf. You can use DMARC to safeguard your domain names from being abused in phishing or spoofing attacks.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="dkim-01.jpg" alt="dkim" /></p>
+<h2>What are DMARC Reports?</h2>
+<p><em>DMARC reports include significant information regarding the validity of emails sent by a domain name.</em> When you create a DMARC record and publish it to your Domain Name System (DNS), you will receive data about all sending sources using your domain.</p>
+<p>This report will contain information concerning the domain, the policy implemented (none, quarantine, or refuse), and the enforcement level (strict or relaxed). Learning how to read DMARC reports is essential for DMARC compliance and <a href="https://www.mailmodo.com/guides/email-security-best-practices/">effective email security</a>.</p>
+<p>There are two different types of DMARC reports:</p>
+<ul>
+<li aria-level="1"><em>Forensic reports</em></li>
+</ul>
+<ul>
+<li aria-level="1"><em>Aggregate reports</em></li>
+</ul>
+<p>These reports are sent to email recipients by email senders for them to examine various components of their outbound emails.</p>
+<ol>
+
+<h3>1. Aggregate reports</h3>
+</li>
+</ol>
+<p>Aggregate reports are received every 24 hours and provide the origination details of your emails, including the source IP address your email was generated from and the result of your <strong>SPF and DKIM authentication</strong>. These two email authentication mechanisms are used by senders to authorize their email sources. Aggregate details are used to determine which sources are legitimate and authorize them to be logged in accordingly.</p>
+<ol>
+
+<h3>2. Forensic reports&nbsp;</h3>
+</li>
+</ol>
+<p><em>Forensic reports are received, each and every time your email fails the fundamental authentication checks, SPF and DKIM. </em>They are used to conduct in-depth research and analysis of emails sent from an address associated with your domain in order to examine whether such an email has been spoofed. Such reports may include the particulars of the spoofed email, such as an email address to an address, the subject, and the header of the email. It is encouraged to enable these reports after aggregate reports are established and all of your legitimate sources are authorized, reducing noise on your firewall and <strong>avoiding spoofed emails</strong>.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="dkim-02.jpg" alt="dkim" /></p>
+<p>Aggregate reports help you find and respond to legitimate solicitations while forensic reports guide you in neutralizing false solicitations and attacking <a href="https://support.singular.net/hc/en-us/articles/360028539992-List-of-Available-Attributes-Fields-for-Defining-Custom-Fraud-Rules">fraudulent attributes</a>. These reports are based on the DMARC framework, which proves crucial to eliminating email-based impersonation fraud.</p>
+<h2>DMARC Reports: Best Practices</h2>
+<p>DMARC reports inform DMARC enforcement. Therefore, we have broken up a few best practices to aid you in the learning process and stop you from making simple errors.</p>
+<ul>
+<li aria-level="1"><strong>Always Enable Reporting When Implementing DMARC</strong>:<em> There's no point to begin DMARC implementation unless you actually enable the reports.</em></li>
+<li aria-level="1"><strong>Send the reports to a special address or email group</strong>: While the RUR and RUAF tags require an email address, it's not recommended to use a personal address, where the reports could get lost or mixed up with normal emails.</li>
+<li aria-level="1"><strong>Analyze your reports and follow the hints to improve your DMARC enforcement</strong>: What could possibly be worse than not enabling RUA and RUF reports is enabling those progress and failing to take them seriously.</li>
+<li aria-level="1"><strong>Use a dedicated service to interpret DMARC Reports</strong>: RUA reports and RUF message headers can become quite complicated when dealing with numerous XML files in an RUA report or email header. Using a <a href="https://securityscorecard.com/blog/what-is-a-third-party-service-provider">third-party service</a> to help with report analysis can simplify your workflow.</li>
+</ul>
+<p>In summary, DMARC is the new way to reduce phishing by <strong>stopping domain spoofing</strong>. The new standard allows a brand or company to have control over what happens with their email. DMARC enables email administrators to stop spoofing at the domain level. No more spoofing, no more phishing. It's time to take back control of your brand.</p>
+
+	</div>
+	
+</div>
+</body>
+</html>
