@@ -1,0 +1,73 @@
+<!DOCTYPE html">
+<html>
+<head>
+<title>Why You Need To Authenticate Your Emails With DKIM</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<style type="text/css" media="all">
+@import "images/style.css";
+</style>
+</head>
+<body>
+<div id="page-container">
+  <div id="top"> 
+    
+  </div>
+  <div id="sidebar-Q2a">
+    <div class="padSding">
+    
+        
+      </ul>
+    </div>
+   
+    
+  </div>
+  <div id="content">
+    <div class="padding">
+      <h2><center>Why You Need To Authenticate Your Emails With DKIM</center></h2><br>
+      <p>DKIM was developed by Yahoo! in 2004 and later adopted by the Internet Engineering Task Force (IETF) as a standard in 2007. It is now used by many email providers, including Gmail, Outlook, and AOL.</p>
+<p>When an email is sent, the sending server signs the message with a <a href="https://www.techtarget.com/searchsecurity/definition/digital-signature">digital signature</a>. The signature is then verified by the receiving server. If the signature is valid, the email is considered to be from the claimed sender.</p>
+<p>DKIM can help to prevent email spoofing and phishing attacks, as well as protect the sender's reputation.&nbsp;</p>
+<h2>What is DKIM?</h2>
+<p>Domain Keys Identified Mail (DKIM) is an <strong>email security</strong> standard that ensures messages are not altered during transit between the addresses from which they are sent and the addresses to which they are sent.&nbsp;</p>
+<p>DKIM facilitates organizations in ensuring that they are able to deliver pieces of communication in a way the recipients can verify. The organization in question might possibly be a source, an intermediary, or the individual dropping what appeared to be the message. The DKIM reputation is used to gauge whether to trust the message.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="dkim-email-33.jpg" alt="dkim-email" /></p>
+<h2>What is a DKIM Signature?</h2>
+<p>To the top of an email, DKIM adds a signature header with an encrypted code. Each DKIM signature includes the identifying details of the message described in an encrypted phrase, and a DKIM key ensures the whole code.</p>
+<p>The originating email server has the "private DKIM key," which can be verified by the receiving <a href="https://www.axigen.com/mail-server/isp/">mail server or ISP</a> with the other half of the keypair, called the "public DKIM key."</p>
+<p>These signatures synchronize directly with the emails, and this synchronization is verified by the email servers that send the emails to their destination.</p>
+<h2>Why should you authenticate emails with DKIM?</h2>
+<p><em>DKIM is one of the main requisite authentication procedures, and that's because it's taken into account for deliverability as well as reputation of the domain.</em></p>
+<p>Some of the main reasons for getting your domain name DKIM authenticated are the following.</p>
+<ol>
+
+<h3>1. Maintains the legitimacy of the sender</h3>
+</li>
+</ol>
+<p>Having a DKIM signed email gives your ISPs the indication that your email has not been interfered with. This assists your reputation by appearing genuine to the recipient's server.</p>
+<p>The more reputable your<strong> sender's reputation</strong>, the more likely it is going to end up in the inbox of the recipient, increasing your deliverability.</p>
+<ol>
+
+<h3>2. Protect your domain and secure your email</h3>
+</li>
+</ol>
+<p>DKIM helps you from sending emails that are spoofed from your domain. It ensures that the email content was not altered when DKIM authenticates your messages. For this reason, do not send emails from <a href="https://www.cloudflare.com/learning/ssl/what-is-domain-spoofing/">spoofed domains</a>.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="dkim-email-34.jpg" alt="dkim-email" /></center></p>
+<ol>
+
+<h3>3. Get in the good books of ISPs</h3>
+</li>
+</ol>
+<p>It's common for ISPs to be considered a major player in determining the best place hosting your <strong>electronic messages</strong>. Signing your emails with DKIM is one of the most effective ways to affirm you're a legitimate sender and prevent the content from being altered.</p>
+<p><em>As soon as ISPs observe that your shared IP address and domain match the majority of the senders, the more often your emails land in the targeted inbox.</em></p>
+<h2>How does DKIM work?</h2>
+<p><em>DKIM is appended to your email's header as a signature once it has been approved by both the sender and recipient's server.</em></p>
+<p>The signature is validated with a public/private key that's either hosted on your server or your ISP. It is private to you, so only you can access it.</p>
+<p>ISPs commonly review the <a href="https://www.duocircle.com/resources/what-is-dkim">DKIM signature</a> on your DNS record to check if it matches the domain name of the sender. This signature is publicly available, perpetuating the publicness of your sender's domain.</p>
+<p>In summary, DKIM is a way to verify the identity of the sender of an email. With DKIM, the signature is added to the email header as a header field. The signature indicates to the receiver of an email that the message is genuine. This prevents any message modification between the sender and the receiver. The result is a better level of trust in the message. The receiver of the email can verify the identity of the sender using the public key in the DKIM header.</p>
+      
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>
