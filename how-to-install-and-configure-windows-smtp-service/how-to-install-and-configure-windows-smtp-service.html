@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>How To Install And Configure Windows SMTP Service In Less Than Five Minutes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="title" content="Green Zone 2.0 | Template by MLP Design" />
+<meta name="author" content="MLP Design, webmasterneo" />
+<link rel="stylesheet" href="new.css" type="text/css" />
+</head>
+<body>
+<div id="pseudo-wrap1">	<!--Begin Header -->
+	<div id="header">
+		<h1>How To Install And Configure Windows SMTP Service In Less Than Five Minutes</h1>
+	</div>
+	<!--End Header --></div>
+<div id="pseudo-wrap2">
+<!-- Begin Wrapper -->
+
+<div id="wrap">
+
+<br>
+	
+		
+		
+		<p>Emails are a vital form of communication for companies of all sizes, regardless of industry. These could include sending messages to clients and other partners, employees, managers, or shareholders. trusted SMTP services can help reduce the workload associated with promoting or advertising products or services by only having to send out an email once.</p>
+<p><a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">Simple Mail Transfer Protocol</a>, or SMTP, allows companies to process and send mass emails more efficiently, accurately, and quickly. Ideally, an SMTP can process mass emails in one click of a button, ensuring that messages land in the recipient&rsquo;s inboxes and not the junk folders. This is advantageous for an enterprise as it saves the company from investing in expensive <strong>server management</strong>.</p>
+<h2>Step-By-Step Guide On Installing And Configuring The Smtp Server On Windows</h2>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="smtp-server-1.jpg" alt="smtp-server" /></p>
+<p>Setting up a SQL Server Database Mail for SQL Server Databases is relatively straightforward. It entails sending an SQLServerDatabaseMessaging to configure the <a href="https://learn.microsoft.com/en-us/biztalk/core/configuring-bam-alerts">BAM alerts</a>. Needless to say, this is easy to implement for all Microsoft SQL server versions, including SQL Server 2012, SQL Server 2014, and SQL Server 2016.</p>
+<p>You can easily adapt a multitude of previously developed server versions to this type of configuration. SQL Server Database Mail takes advantage of SMTP servers to <strong>send emails</strong> of alerts. <em>For equipment and applications that don't link with email servers, setting up an intermediary, such as the Internet Information Server (IIS), is an option.</em></p>
+<p>The <a href="https://www.duocircle.com/content/smtp-service/smtp-service-windows">Windows</a> SMTP server setup procedure for devices is as follows:</p>
+<h2>Step 1: Install an SMTP Service</h2>
+<p>Installing an SMTP service on Windows servers typically requires a few steps as these servers have inbuilt features or third-party applications to perform the process. Installing the SMTP service on Windows may require the following these steps:</p>
+<ul>
+<li aria-level="1">Open the server manager by accessing the middle left portion of your dashboard. From there, go to the dropdown menu and select the Add Roles and Features tab. <em>Alternatively, you can access this Add Roles and Features tab from the Manage menu at the top right of your dashboard.</em></li>
+<li aria-level="1">Scroll down to the Before You Begin option and select Next. This action will take you to the <a href="https://www.coursehero.com/file/p6t8879/1-What-is-the-difference-between-Role-based-or-feature-based-installation-and/">Role-Based or Feature-Based Installation</a> prompt. Again, press Next.</li>
+<li aria-level="1">At this point, you will need to choose a server from the pool of Windows servers available on the server. Therefore, click on the Selected server and click Next. Click the Server Selection window. This window will display a list of servers available in the Server Manager and will display the local server by default.</li>
+<li aria-level="1">Go to the Server Roles tab and click Next. Go to Features and tick the SMTP Server console. This should set the SMTP server. However, some <strong>Windows versions</strong> may appear to Add Features. Go ahead and click Next if prompted.</li>
+<li aria-level="1">Click the Restart Destination Server link within the Confirmation section, and then select Install. Once the Install process is complete, choose Close.</li>
+</ul>
+<h2>Step 2: Configure Your Newly Installed SMTP Server</h2>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="smtp-server-2.jpg" alt="smtp-server" /></p>
+<p>You can take these steps to configure your SMTP server: first, configure a Virtual SMTP Virtual Server using the Information Service Manager (IIS 6.0). Next, the following steps will help you:</p>
+<ul>
+<li aria-level="1">Open the IIS Manager utility by entering inetmgr6.exe in the Start menu. From there, type your device name, right-click SMTP Virtual Server 1 and choose Properties. Go into the Access tab and select the Relay option.</li>
+<li aria-level="1">Now you ought to add the address of your computer to Add. So, click on the Add tab and click on the Single Computer button, then enter the IP address of your device.&nbsp;</li>
+<li aria-level="1"><em>Scroll to the Delivery tab, click, and select Outbound Security.</em> The available options here include Anonymous Access, Basic Authentication, Integrated Windows Authentication, and TLS Encryption. Select appropriately based on your needs and policy requirements.</li>
+<li aria-level="1">Within returning to the Deliveries tab, click Outbound Connections. SMTP runs on port 25 by default. You can press OK. But if you have some other open port within your firewall.</li>
+<li aria-level="1">On the Delivery tab, choose the Advanced option. <strong>FQDN</strong> (fully qualified domain name) is listed by default in the Delivery Name section. You can either leave the SmartHost area empty or enter a VPS IP address. Press OK and continue.</li>
+<li aria-level="1"><em>Restart your newly installed SMTP server to apply the new information</em>. This can be done by right-clicking SMTP Virtual Server 1, Stop, and Start in that order.</li>
+</ul>
+<p>Overall, this is a great tool for anyone looking to host their email server without needing a third-party email service. The fact that it's <strong>free and open-source</strong> is a big plus and it even comes with a management console to help you manage and monitor your server.</p>
+	</div>
+	</div>
+</body>
+</html>
