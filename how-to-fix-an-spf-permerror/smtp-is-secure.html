@@ -1,0 +1,73 @@
+<!DOCTYPE html">
+<html>
+<head>
+<title>How To Fix An SPF Permerror So Your SMTP Is Secure</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<style type="text/css" media="all">
+@import "images/style.css";
+</style>
+</head>
+<body>
+<div id="page-container">
+  <div id="top"> 
+    
+  </div>
+  <div id="sidebar-Q2a">
+    <div class="padSding">
+    
+        
+      </ul>
+    </div>
+   
+    
+  </div>
+  <div id="content">
+    <div class="padding">
+      <h2><center>How To Fix An SPF Permerror So Your SMTP Is Secure</center></h2><br>
+      <p>When it comes to email and web security, SMTP is one of the most important protocols to get right. Unfortunately, if you're looking to set up an SMTP server, you may run into an error known as an SPF Permerror. This error can cause your email and web traffic to be blocked or rejected, which can leave your network vulnerable to malicious attacks.&nbsp;</p>
+<p>Thankfully, understanding and fixing an SPF Permerror is fairly simple, and with a few steps and a basic knowledge of SMTP, you can restore your SMTP server to a secure state. In this blog post, we'll explore the causes of an <a href="https://www.duocircle.com/content/spf-permerror">SPF Permerror</a>, talk about why it's important to fix it, and provide simple instructions for resolving the issue so your SMTP server is secure.</p>
+<br><h2>What Is An SPF Permerror?</h2><br>
+<p>An SPF error or SPF Permanent Error is one of the most common SPF errors that arises when a domain's SPF record could not be correctly interpreted, preventing the sending of emails.</p>
+<p>An SPF Permerror can occur due to these reasons:</p>
+<br><p><img style="display: block; margin-left: auto; margin-right: auto;" src="spf-permerror-1.jpg" alt="spf-permerror" /></p><br>
+<ul>
+<li aria-level="1">If the SPF record has a <a href="https://www.sciencedirect.com/topics/engineering/syntax-error">syntax error</a></li>
+<li aria-level="1">If a domain has multiple SPF records</li>
+<li aria-level="1">If the SPF evaluates more than 10 DNS mechanism lookups in an SPF record</li>
+</ul>
+<br><h2>What Is SPF Permerror &ndash; &ldquo;Too Many Dns Lookups&rdquo;?</h2><br>
+<p>This is the most frequent error of the three types of timeout error. SPF puts several safeguards in place to be certain that you have zero timeout errors. An <strong>SPF evaluates ten DNS mechanisms</strong> in an SPF file. They consist of: a, MX, PTR, exists, include, redirect. If these DNS records exceed more than 10, it will raise an SPF Permerror. <em>When an SPF Permerror is raised, you will have to remove a few lookups/mechanisms.</em></p>
+<br><h2>What Does SPF Validation Failed Mean?</h2><br>
+<p>SPF validation error occurs if the Sender Policy Framework (SPF) validation of the sender's domain is not approved. To minimize these issues, an email admin should make sure that the settings for the <a href="https://www.cloudflare.com/learning/dns/glossary/what-is-a-domain-name-registrar/">domain registrar</a> are maintained properly. For more information on these reasons, see the SPF guide.</p>
+<ul>
+<li aria-level="1">Multiple SPF Records</li>
+<li aria-level="1">SPF Validation is Not Available</li>
+<li aria-level="1">More than 10 DNS Lookups</li>
+<li aria-level="1">PTR Mechanism Usage</li>
+<li aria-level="1">Macro is Invalid</li>
+<li aria-level="1">Multiple Fallback Scenarios</li>
+</ul>
+<br><h2>How to Fix An SPF Permerror?</h2><br>
+<h3>SPF Flattening</h3>
+<p>A flattening process to flatten an SPF record to a flat, compressed record containing fewer than 10 DNS lookup mechanisms is known as SPF flatness. It is also known as SPF record compression. Using the <strong>grinding of an SPF record</strong>, you can compress the number of DNS querying mechanisms addresses that are 1.</p>
+<p>SPF flattening removes the SPF record, includes an MX, and contains mechanisms to <strong>simplify the SPF listing </strong>and reduce the number of DNS queries. Without doing these, there will be unnecessary DNS queries. <em>Mechanisms such as ip4 and ip6 are included as they do not use SPF queries.</em></p>
+<br><h2>Avoiding Unnecessary &lsquo;include&rsquo; Statements</h2><br>
+<br><p><img style="display: block; margin-left: auto; margin-right: auto;" src="spf-permerror-2.jpg" alt="spf-permerror" /></p><br>
+<p>An 'include' statement is a mechanism meant to redirect a DNS lookup to verify authorized IPs of a domain's SPF record. These 'include' statements in the SPF records from the original domain will count towards the maximum of 10.</p>
+<br><h2>Removing Reference to Invalid and Unused Domains</h2><br>
+<p>If your registrar does not assign you to a domain or grants it to a partner, then the SPF setting can automatically direct the <strong>domain's verification</strong> of ownership to the domain in question. By removing the websites that your registrar has not given you, your SPF record will be less bogged down by DNS queries.</p>
+<p>You can also use these methods to avoid an SPF Permerror:</p>
+<ul>
+<li aria-level="1">Replacing the &lsquo;include&rsquo; statement with ip4 and ip6 mechanisms when possible</li>
+<li aria-level="1">You can remove mechanisms that refer to the same domain</li>
+<li aria-level="1">Limit the use of <a href="https://dmarcian.com/ptr-mechanisms-in-spf-records/#:~:text=What%20does%20the%20PTR%20mechanism,email%20from%20IP%20address%201.2.">PTR mechanisms</a> as their usage can result in numerous DNS lookups</li>
+<li aria-level="1">Use SPF record checks</li>
+</ul>
+<p>In conclusion, it is essential to ensure that your SMTP is secure and that your SPF records are set up correctly. If you experience any issues or are <strong>unsure how to fix an SPF Permerror</strong>, you can contact your provider or hosting company for assistance. Additionally, you can use the SPF Checker to diagnose any issues and ensure that your domain is properly configured. <em>Making sure your SMTP is secure is essential to protecting your email address from spoofing and phishing attacks.</em></p>
+      
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>
