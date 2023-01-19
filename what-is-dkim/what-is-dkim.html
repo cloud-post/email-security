@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>What Is DKIM: Why You Need To Know About It</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+
+</head>
+<body>
+	
+        
+    <!-- choose start -->
+    <div id="about" class="choose_section">
+    	<div class="container">
+    		<div class="col-sm-12">
+    			<h1 class="choose_text">What Is DKIM: <span class="color">Why You Need To Know About It</span></h1>
+    			<p>DKIM - DomainKeys Identified Mail - is a critical technology for protecting and verifying the authenticity of emails sent from a domain. This technology is used to create digital signatures and is a key element of email security. For most businesses and organizations, it is essential to implement DKIM to <strong>prevent spoofing and phishing</strong>. Unlocking DKIM enables businesses to have the assurance that the emails they send are secure and trustworthy.</p>
+<p><em>DomainKeys Identified Mail (DKIM) is a framework that allows an organization to declare responsibility for an e-mail by concluding it with a feature that email providers can validate. </em>DKIM record verification is carried out through <strong>cryptographic authentication</strong>.</p>
+<p>One of the most efficient ways to safeguard your customers and employees from targeted email attacks is by using DKIM. Recently published an article describing SPF, or Sender Policy Framework, and how its adoption can help you protect your clients from security threats involving email. Now, we will expound on another email authentication technique, DKIM. <a href="https://www.duocircle.com/resources/dkim-validation">duocircle.com</a> has great information about what DKIM is.</p>
+<br><h2>Understanding DKIM:</h2><br>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="what-is-dkim-11.jpg" alt="what-is-dkim" /></p><br>
+<p>There are three primary actions required to complete a DKIM signature creation process. First, the sender identifies the fields they include in the <strong>DKIM signature</strong>. These include the form address, subject, body, and many others.&nbsp;</p>
+<p><em>The DKIM signature-making platform adds unreadable portions of text to create a hash. The hash string is decrypted using the private key that only the sender has accessibility.</em> The decrypted original hash string from the DKIM signature needs to then be compared with the public key.&nbsp;</p>
+<br><h2>The DKIM Signature:</h2><br>
+<p>The DKIM signature is the primary focus of validation. It is created by various elements of the message, including the sender's site, message body, and other included parts. These details are the result of when the message is transmitted, therefore it cannot be altered afterward.</p>
+<p>To generate the signature, the sender uses his private key to hash the session to generate a domain s public key and the message. The recipient <strong>email server </strong>then uses the sender's public key to hash the same components of the stream as well.</p>
+<p>The recipient will take the resulting encrypted data, a hash identifier, and compare it with the decryption of the original sender s hash. If both hashes match, then <strong>DKIM validation</strong> will be deemed successful. Even if one key character in the message has changed, the hash returned by encrypting it with the <a href="https://www.techtarget.com/searchsecurity/definition/public-key">public key</a> is not the same as the one sent from the sender's email server.</p>
+<br><h2>DKIM Selectors:</h2><br>
+<p>Domain <strong>TXT DKIM entries</strong> can be hosted on the domain's DNS server, but an email server responsible for delivering the message must be able to find them. DKIM selector designates where the recipient&rsquo;s email server can find the public key of the domain.</p>
+<p><em>The public key is used to mull over the hash created with the private key, so it is an essential component of DKIM validation.</em> Every email message sent with DKIM configurations has a header containing a signature with the selector included than other information.</p>
+<br><h2>Power Of DKIM &amp; SPF:</h2><br>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="what-is-dkim-22.jpg" alt="what-is-dkim" /></p><br>
+<p><em>DKIM and SPF are two systems used to confirm the authenticity of an email. DMARC, however, is used to control how emails interact with domain structures. </em>While DKIM protects against tampering and interception, SPF stops <strong>spoofed messages</strong> from being presented using the sender's domain.</p>
+<p>With a SPF record, the owner of the domain registers a text record on their <a href="https://www.cloudflare.com/learning/dns/what-is-a-dns-server/">DNS servers</a> just as a DKIM record hosts critical info. The <strong>TXT data </strong>lists all email servers authorized to send mail in place of the domain.&nbsp;</p>
+<br><h2>Improve Email Deliverability With DKIM Records:</h2><br>
+<p><em>A DKIM record protects the recipients of emails by notifying them in advance when the email contains suspicious or fuzzy content.</em> Furthermore, it will confirm that the contents acknowledged with the DKIM signature are unmodified throughout their delivery. However, DKIM is significantly more challenging to implement, so more senders have not adopted it.</p>
+<p>DKIM has no method that <strong>prevents cybercriminals from spoofing</strong> the email parts in the email's "from" field, including the email address, display name, and domain name. So, like SPF, DKIM alone is not sufficient to protect a company from sophisticated email attacks.</p>
+<p>All in all, DKIM can be a powerful tool for protecting your <a href="https://sendgrid.com/blog/5-ways-check-sending-reputation/">email reputation</a> and ensuring that your emails land in your recipients' inboxes. With a few simple steps and a few minutes of setup, you can easily lock down your DKIM keys and reap the benefits of improved email deliverability. <em>With DKIM, you can rest assured that your emails are reaching the right people and that your reputation is secure.</em></p>
+    	</div>
+    </div>
+    
+    
+
+
+    <!-- contact end -->
+ 
+ 
+</body>
+</html>
+
+
+
