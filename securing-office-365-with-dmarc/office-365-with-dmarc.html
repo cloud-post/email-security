@@ -53,20 +53,20 @@ https://templatemo.com/tm-536-dream-pulse
 <p>We'll also provide helpful tips for maintaining and strengthening your <strong>security measures</strong>. By the end of this blog post, you should be equipped with the knowledge and resources necessary to add a DMARC record to your Office 365 account and increase the security of your organization.</p>
 <br><p><img style="display: block; margin-left: auto; margin-right: auto;" src="dmarc-01.jpg" alt="dmarc" /></p><br>
 <h2>Setting Up Your DMARC Record On Office 365</h2>
-<p>A few notes before you begin</p>
+<br><p>A few notes before you begin</p>
 <ul>
 <li aria-level="1"><em>Enforcing DMARC means that you need to have SPF (Sender Policy Framework) and DKIM (DomainKeys Identified Mail) set up beforehand.</em></li>
 </ul>
 <br><ul>
 <li aria-level="1">To set up DMARC on your custom domain, you need to make sure that your Office 365 account is connected to your domain and verified</li>
 </ul>
-<h3>1. Navigate To The DNS Manager</h3>
+<br><h3>1. Navigate To The DNS Manager</h3>
 <ul>
 <li aria-level="1">Before configuring your DMARC records, please go to your domain registrar and go to your DNS administrator. DMARC policies are generally formatted as a TXT file. To create one, add a new <a href="https://en.wikipedia.org/wiki/Text_file">TXT file</a> to your <strong>DNS records</strong> with the following information.</li>
 <br><li aria-level="1">To change the TTL setting for your voter registration, you may need to choose your domain registrar's setting and set it as 1 hour, 60 minutes, or 3600 seconds.</li>
 <br><li aria-level="1">The value field is the place where you will gain knowledge of a DMARC record.</li>
 </ul>
-<h3>2. Select The DMARC Policy</h3>
+<br><h3>2. Select The DMARC Policy</h3>
 <p>Your DMARC policy defines the treatments or actions you happen to look for in emails that fail authentication tests.</p>
 <p>The DMARC policy is stored in the P tag and is a required element. There are three types of policies: to choose from.</p>
 <ul>
@@ -75,11 +75,11 @@ https://templatemo.com/tm-536-dream-pulse
 <br><li aria-level="1"><strong>Reject (p=reject): </strong><em>The reject policy asks the receiving server to reject the email from landing in any inbox or folder.</em></li>
 </ul>
 <p>If you do not have DMARC reports set up, you should start with none. It allows you to collect the trailing 505 section of your email record and generate a monitoring record for common issues.&nbsp;</p>
-<h3>3. Add An Email Address To Which Reports Can Be Sent</h3>
+<br><h3>3. Add An Email Address To Which Reports Can Be Sent</h3>
 <p>The aggregate reports sent daily contain summary information of the <a href="https://www.enginemailer.com/blog/email-traffic">email traffic</a>, such as when the message was sent, the sender's IP address, and the results from authentication tests. Use the rua tag to specify where to send these reports.</p>
 <br><p><img style="display: block; margin-left: auto; margin-right: auto;" src="dmarc-02.jpg" alt="dmarc" /></p><br>
 <p>Besides survey results, you might also discover failure or <strong>forensic reports</strong> from other DMARC sources. However, these kinds of reports are no longer used, as it has little use compared to aggregated reports, and can be quite dangerous.</p>
-<h3>4. Create The TXT Record Value</h3>
+<br><h3>4. Create The TXT Record Value</h3>
 <p>To create the <a href="https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/">TXT record</a>, all you need to do is combine the previous components we&rsquo;ve discussed in the &ldquo;value&rdquo; field.</p>
 <p><em>Even when you're not overly concerned with the reauthentication tag, it's still quite vital that you establish your very first DMARC record.</em> It will permit you to view aggregate reports. These reports contain important data you need to collect when you establish your first DMARC document. You should be capable of gaining access to your first DMARC report within 72 hours after uploading this record.</p>
 <p>In summary, DMARC is an effective tool to <strong>protect your organization from phishing attacks</strong>, and it is fairly simple to set up and configure in Office 365. It is important to understand the available settings and ensure that your DMARC policy is configured properly. Implementing DMARC is an essential step in creating a secure Office 365 environment and will help protect your organization from malicious actors.</p>
