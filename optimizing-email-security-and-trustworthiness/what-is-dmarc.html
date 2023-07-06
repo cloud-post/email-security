@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>What is DMARC? Optimizing Email Security And Trustworthiness</title>
+<!--
+DREAM PULSE
+https://templatemo.com/tm-536-dream-pulse
+-->
+
+    <link rel="stylesheet" href="css/templatemo-dream-pulse.css" />
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">        
+          <nav id="tmSidebar" class="tm-bg-black-transparent tm-sidebar">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-sidebar-sticky">
+              <div class="tm-brand-box">
+                
+                    
+                  </div>
+                </div>
+              </div>
+
+              <ul id="tmMainNav" class="nav flex-column text-uppercase text-right tm-main-nav">
+                
+                
+             
+              <footer class="text-center text-white small">
+               
+              </footer>
+            </div>
+          </nav>
+          
+          <main role="main" class="ml-sm-auto col-12">
+            <div
+              class="parallax-window"
+              data-parallax="scroll"
+              data-image-src="img/dream-pulse-header.jpg">
+              <div class="tm-section-wrap">
+                <section id="intro" class="tm-section">
+                    <div class="tm-bg-white-transparent tm-intro">
+                      <h1><center>What is DMARC? <br><br>Optimizing Email Security And Trustworthiness</center></h1>
+                        <p class="tm-color-gray">
+<br><p>In today's digital age, email is a crucial communication tool for businesses and individuals alike. However, with the increasing prevalence of phishing attacks, spam, and other email-based threats, it's more important than ever to ensure the security and trustworthiness of your emails. That's where DMARC comes in.&nbsp;</p>
+<p>DMARC, which stands for Domain-based Message Authentication, Reporting, and Conformance, is an email authentication protocol designed to <strong>prevent email fraud</strong> and protect domain reputation. By implementing DMARC, organizations can ensure that only legitimate emails from authorized senders are delivered to their recipients, while blocking fraudulent emails that impersonate their brand.&nbsp;</p>
+<p><em>DMARC also provides valuable reporting capabilities, allowing organizations to monitor and analyze email activity and identify any suspicious behavior.</em> In this blog post, we'll delve into the details of DMARC, explaining how it works, why it's important, and how you can optimize your email security and trustworthiness with this powerful tool. To find out more about what DMARC is, visit a <a href="https://dmarcreport.com/what-is-dmarc/">webpage</a>.</p>
+<br><p><img style="display: block; margin-left: auto; margin-right: auto;" src="dmarc.jpg" alt="dmarc" /></p><br>
+<h2>What is DMARC?</h2>
+<p>DMARC, which stands for Domain-based Message Authentication, Reporting, and Conformance, is an email authentication protocol designed to address email fraud and misuse. It allows domain owners to specify the actions email receivers should take when handling <strong>unauthenticated emails</strong> sent from their domain.</p>
+<br><h2>How Does DMARC Work?</h2>
+<p>DMARC operates by combining the existing email authentication protocols, SPF and DKIM. SPF ensures that an email originated from an authorized server, while DKIM ensures the integrity of the email's content. DMARC improves upon these protocols by allowing domain owners to establish their email authentication policies and instructing email receivers on how to handle failed authentication emails.</p>
+<br><h2>DMARC consists of various elements.</h2>
+<p>There are three main components that make up DMARC.</p>
+<ul>
+<li aria-level="1"><strong>Policy:</strong> <em>There are three policies available for the email receiver to determine how to handle emails that do not pass authentication: p none, p quarantine, and p reject.</em></li>
+<br><li aria-level="1"><strong>Reporting:</strong> Domain owners can receive detailed reports on the authentication results of their emails through DMARC, which also offers valuable insights into <a href="https://www.oracle.com/in/cloud/networking/email-delivery/">email delivery</a>, authentication failures, and potential threats.</li>
+<br><li aria-level="1"><strong>Alignment:</strong> The alignment of the "From" domain in the email's header with the domains used in <strong>SPF and DKIM authentication</strong> is ensured by DMARC. This alignment aids in the identification and prevention of email spoofing and impersonation.</li>
+</ul>
+<br><br><h2>The DMARC Policies include p none, p quarantine, and p reject.</h2>
+<p>There are three possible policies for DMARC, which dictate how the recipient of an email should handle emails that do not pass authentication.</p>
+<ul>
+<li aria-level="1"><strong>p=none: </strong>During the early stages of DMARC implementation, this policy enables domain owners to observe email authentication without affecting the delivery of emails. It serves as an informational measure.</li>
+<br><li aria-level="1"><strong>p=quarantine:</strong> Unauthenticated emails should be regarded as suspicious according to this policy, and they should be directed to the recipient's <strong>spam or quarantine folder</strong>.</li>
+<br><li aria-level="1"><strong>p=reject:</strong> Unauthenticated emails will be outright rejected by this policy, which is the most stringent, resulting in non-delivery to the recipient's inbox.</li>
+</ul>
+<br><br><h2>Enhancing Email Security through DMARC Implementation</h2>
+<br><p><img style="display: block; margin-left: auto; margin-right: auto;" src="dmarc-1.jpg" alt="dmarc" /></p><br>
+<ol>
+
+<h3>1. Publish a DMARC record:&nbsp;</h3>
+</li>
+</ol>
+<p>It is necessary for domain owners to include a DMARC record in their DNS (Domain Name System) which outlines their <strong>DMARC policies</strong> and reporting needs.</p>
+<ol>
+
+<h3>2. Configure SPF and DKIM:&nbsp;</h3>
+</li>
+</ol>
+<p>Having SPF and DKIM configured for their domain is a requirement for domain owners before implementing DMARC.</p>
+<ol>
+
+<h3>3. Gradually enforce DMARC policies:&nbsp;</h3>
+</li>
+</ol>
+<p>Domain owners are advised to begin with a p none policy and assess the <a href="https://easydmarc.com/blog/understanding-dmarc-reports/">DMARC reports</a> they receive. By utilizing the knowledge acquired, they can progressively implement more stringent policies.</p>
+<br><h2>Benefits of DMARC</h2>
+<p>Domain owners and email recipients can experience various advantages by implementing DMARC.</p>
+<ul>
+<li aria-level="1"><strong>Email deliverability:</strong> By reducing the likelihood of emails being flagged as spam or phishing attempts, DMARC aids in enhancing <strong>email deliverability rates</strong>.</li>
+<br><li aria-level="1"><strong>Brand protection: </strong>Domain owners can safeguard their brand reputation by preventing email spoofing and impersonation through the implementation of DMARC.</li>
+<br><li aria-level="1"><strong>Reduced email fraud:</strong> By authenticating the sender's identity, DMARC effectively decreases the likelihood of email fraud, including phishing attacks and CEO fraud.</li>
+</ul>
+<p>In summary, DMARC is a powerful <a href="https://en.wikipedia.org/wiki/Email_authentication">email authentication</a> protocol that helps protect businesses and their customers from email-based scams and phishing attacks. By implementing DMARC, organizations can ensure that only legitimate emails are delivered to their customers, while also building trust and credibility with their brand. While DMARC may seem like a complex protocol, it is relatively easy to set up and can be an effective tool in <strong>securing your email communications</strong>. As more and more businesses move towards digital communication, implementing DMARC is becoming increasingly important to maintain email security and trustworthiness.</p>
+                        
+                    </div>              
+                </section>
+            </div>            
+          </div>
+
+         
+  </body>
+</html>
