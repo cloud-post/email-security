@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How To Create A DMARC Record For Email Authentication</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Basic Page Needs
+================================================== -->
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+<!-- Container starts
+================================================== -->
+<div class="container">
+	<!-- Main hero unit for a primary marketing message or call to action -->
+	<div class="hero-unit">
+		<h1>How To Create A DMARC Record For <br><br>Email Authentication</h1>
+<br><p>In the world of email, there are a variety of ways to authenticate messages and ensure they are sent from a trustworthy source. One of the most effective methods is through the use of DMARC records. DMARC, which stands for Domain-based Message Authentication, Reporting and Conformance, is an <a href="https://en.wikipedia.org/wiki/Email_authentication">email authentication</a> protocol that allows domain owners to protect their domain from unauthorized use. By creating a DMARC record, you can specify to email providers how to handle messages that fail authentication checks. This helps to reduce the risk of phishing attacks, spam, and other email-based threats.</p>
+<br><h2>Why DMARC is Important for Email Security</h2><br>
+<p>Here are some key reasons why DMARC is important for email security:</p>
+<ul>
+<li aria-level="1"><strong>Preventing email spoofing: </strong><em>Email spoofing is the act of falsifying the From address in an email to create the illusion that it originated from a reliable source.</em> This method is frequently employed in phishing assaults, where perpetrators deceive recipients into revealing confidential data or downloading harmful material. DMARC empowers domain owners to designate which servers are permitted to send emails on their behalf, thus thwarting unauthorized individuals from spoofing their domain.</li>
+<br><br><p><img style="display: block; margin-left: auto; margin-right: auto;" src="dmarc.jpg" alt="dmarc" /></p><br>
+<br><li aria-level="1"><strong>Protecting brand reputation: </strong>By implementing DMARC, organizations can safeguard their brand reputation by verifying that only authorized senders are able to utilize their domain name in email communications. This implementation greatly diminishes the chances of their brand becoming linked to <strong>fraudulent or malicious activities</strong>, which can cause harm to their reputation and erode customer trust.</li>
+<br><li aria-level="1"><strong>Enhanced email deliverability:</strong> The publication of a DMARC policy by a domain owner enables receiving email servers to decide how to deal with emails that do not pass authentication. <em>By indicating a policy of rejection or quarantine, the domain owner directs the receiving servers to either reject or categorize suspicious emails as spam.&nbsp;</em></li>
+<br><li aria-level="1"><strong>Visibility and reporting:</strong> By utilizing DMARC, domain owners can gain valuable insights into email authentication failures and potential misuse of their domain. These reports offer crucial information about the <strong>origins of unauthorized emails</strong>, enabling domain owners to identify and respond appropriately to malicious activities. Through the analysis of these reports, organizations can take proactive measures to address security threats and enhance the security of their email system.</li>
+</ul>
+<br><h2>Creating a DMARC Record</h2><br>
+<ol>
+
+<h3>1. Access your DNS Management Console</h3>
+</li>
+</ol>
+<p>Log in to the platform or DNS management console where you manage your domain's DNS records. This is usually provided by your domain registrar or <a href="https://www.forbes.com/advisor/in/business/software/best-web-hosting-providers/">hosting provider</a>.</p>
+<ol>
+
+<br><h3>2.&nbsp;Locate the Domain</h3>
+</li>
+</ol>
+<p>Identify the domain for which you want to create the DMARC record. Ensure you have administrative access to manage <strong>DNS records</strong> for that domain.</p>
+<ol>
+
+<br><h3>3.&nbsp;Create a New DNS TXT Record</h3>
+</li>
+</ol>
+<p>Create a new DNS TXT record for the domain. Look for an option to add a new record and select the record type as "TXT." This record type allows you to add text-based information to your DNS settings.</p>
+<ol>
+
+<br><h3>4.&nbsp;Configure the DMARC Record</h3>
+</li>
+</ol>
+<p>In the TXT value or content field, enter the following DMARC record:</p>
+<p>v=DMARC1; p=none; rua=mailto:your-email@example.com; ruf=mailto:your-email@example.com; fo=1; sp=none</p>
+<p>Explanation of the parameters:</p>
+<ul>
+<li aria-level="1"><strong>v=DMARC1:</strong> Indicates the version of DMARC being used.</li>
+<br><li aria-level="1"><strong>p=none: </strong><em>Specifies the policy to be applied for handling emails. In this example, "none" is used, meaning no action will be taken for failing emails.</em></li>
+<br><li aria-level="1"><strong>rua=mailto: </strong>your-email@example.com: Specifies the email address where aggregate reports will be sent. Replace "your-email@example.com" with your desired email address.</li>
+<br><br><p><img style="display: block; margin-left: auto; margin-right: auto;" src="dmarc-1.jpg" alt="dmarc" /></p><br>
+<br><li aria-level="1"><strong>ruf=mailto:</strong> your-email@example.com: Specifies the email address where forensic (failure) reports will be sent. Again, replace "your-email@example.com" with the desired email address.</li>
+<br><li aria-level="1"><strong>fo=1: </strong>Sets the options for generating forensic reports. "1" indicates that only failed authentication results should generate a <a href="https://www.salvationdata.com/work-tips/write-a-forensic-report/">forensic report</a>.</li>
+<br><li aria-level="1"><strong>sp=none:</strong> Sets the policy for subdomains of the domain. "none" means the same policy as the parent domain will be applied.</li>
+</ul>
+<ol>
+
+<br><h3>5.&nbsp;Save the DMARC Record</h3>
+</li>
+</ol>
+<p>Save the DMARC record by clicking the appropriate button or following the instructions provided by your<strong> DNS management console</strong>. This action will update your domain's DNS settings.</p>
+<ol>
+
+<br><h3>6.&nbsp;Allow DNS Changes to Propagate</h3>
+</li>
+</ol>
+<p>DNS changes typically take time to propagate throughout the internet. It can take up to 24-48 hours for the changes to be fully effective. During this period, wait for the DNS changes to propagate.</p>
+<p>In Overall, creating a DMARC record for email authentication is a crucial step in protecting your domain from email fraud and phishing attacks. With the help of DMARC, you can monitor and control the messages that are sent on behalf of your domain and ensure that only authorized senders are allowed to send emails. By following the guidelines and steps outlined in this post, you can easily <a href="https://dmarcreport.com/how-to-create-dmarc-record/">create a DMARC record</a> and implement it on your domain.</p>
+
+	</div>
+	
+</div>
+</body>
+</html>
